@@ -1,4 +1,4 @@
-FROM golang:1.7
+FROM golang:1.8
 
 RUN apt-get update
 RUN apt-get install unzip
@@ -13,3 +13,4 @@ RUN wget https://github.com/tcnksm/ghr/releases/download/${GHR_VERSION}/ghr_${GH
 WORKDIR /go/src/app
 
 CMD ["/bin/bash"]
+
